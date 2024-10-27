@@ -1,0 +1,150 @@
+body {
+--color-primary: #fff;
+--color-background: #000;
+--color-accent: #86efac;
+--color-accent-secondary: #ffdb1e;
+--color-accent-bg: #000;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--color-primary);
+  background-color: var(--color-background);
+  margin: 2rem;
+}
+
+h1, h3, h5 {
+  color: var(--color-accent-secondary);
+}
+
+h2, h4, h6 {
+  color: var(--color-accent);
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  gap: 1rem;
+  list-style: none;
+}
+
+a {
+  background-color: var(--color-accent-bg);
+  color: var(--color-accent);
+  text-decoration: none;
+  padding: 0.25em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+em {
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+form {
+  margin-bottom: 2rem;
+}
+
+form, label {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  font-weight: 700;
+  max-width: 40ch;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  font-weight: 700;
+  cursor: pointer;
+  max-width: 20ch;
+}
+
+form[name="movie-rating"] [name="stars"] {
+  width: 8ch;
+}
+
+.movie-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.movie-list li::before {
+  content: '🍿';
+  margin-right: 0.25em;
+}
+
+._404 {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+
+.counter_buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.lemon button {
+  background-color: var(--color-accent-secondary);
+}
+
+.citrus-fruits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+}
+
+.counter_buttons p {
+  width: 2ch;
+  max-width: 2ch;
+  text-align: center;
+  align-self: center;
+}
+
+.visually-hidden, .skip-link:not(:focus) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.skip-link:focus {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
